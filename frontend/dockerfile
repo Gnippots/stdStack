@@ -1,0 +1,16 @@
+FROM node:20
+
+WORKDIR /app
+
+COPY frontend/package*.json .
+RUN npm ci
+
+# Copy the build output
+COPY frontend/build ./build
+
+expose 3000
+
+ENV NODE_ENV=production
+
+# Set the command to serve the pre-built files
+CMD ["node", "build"]
