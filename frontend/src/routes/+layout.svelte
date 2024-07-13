@@ -51,7 +51,6 @@
     }
 
     body {
-        background-image: url('$lib/images/BGTileColoured.png');
         height: 100vh;
         margin: 0;
         position: relative;

@@ -6,7 +6,7 @@ down:
 	docker compose -f docker-compose.prod.yml down
 
 dev:
-	docker compose -f docker-compose.yml up -d --build
+#	docker compose -f docker-compose.yml up -d --build
 	cd frontend; npm run dev
 
 prod:
